@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dim_campaigns
+    description: "The source of truth for campaign metadata and naming conventions."
+    columns:
+      - name: CAMPAIGN_ID
+        tests:
+          - unique
+          - not_null
+      - name: CHANNEL_GROUP
+        tests:
+          - accepted_values:
+              values: ['Search', 'Social', 'Email', 'Affiliate', 'Organic','Direct/Unknown']
+
+  - name: fct_daily_performance
+    description: "The primary table for ROAS and ROI reporting, aggregated by day and campaign."
+    columns:
+      - name: DATE
+        tests:
+          - not_null
+      - name: ORDERS
+        tests:
+          - not_null

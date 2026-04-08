@@ -1,0 +1,9 @@
+sources:
+  - name: staging
+    database: MARKETING_ATTRIBUTION_DB  
+    schema: staging  
+    tables:
+      - name: raw_ad_spend
+      - name: raw_shopify_orders
+      - name: raw_web_events
+

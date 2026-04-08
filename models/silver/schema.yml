@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: silver_web_events
+    columns:
+      - name: SESSION_ID
+        tests:
+          - unique
+          - not_null
+      - name: TRAFFIC_TYPE
+        tests:
+          - accepted_values:
+              values: ['Paid', 'Organic']
+
+  - name: order_attribution
+    columns:
+      - name: ORDER_ID
+        tests:
+          - unique
+          - not_null
+      - name: SESSION_ID
+        tests:
+          - not_null
+          - relationships:
+              to: ref('silver_web_events')
+              field: SESSION_ID
+              config:
+                severity: warn
+      - name: PLATFORM
+        tests:
+          - not_null

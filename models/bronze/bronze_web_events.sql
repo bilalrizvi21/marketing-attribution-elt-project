@@ -1,0 +1,1 @@
+select * from {{ source('staging', 'raw_web_events') }}

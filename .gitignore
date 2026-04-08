@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# Snowflake / dbt Credentials
+profiles.yml
+
+# dbt specific files (The "Noise")
+target/          
+dbt_packages/    
+logs/           
+dbt_modules/     
+
+# OS files
+
+Thumbs.db        
