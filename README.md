@@ -44,6 +44,8 @@ Customer Acquisition Cost (CPA) trends.
 
 Volume vs. Value: Comparing high-volume Organic traffic against high-value Paid traffic.
 
+[Dashboard]('marketing_attribution_dashboard.png')
+
 🚀 How to Run
 
 Clone the repo: git clone <https://github.com/bilalrizvi21/marketing-attribution-elt-project>
