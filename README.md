@@ -44,7 +44,7 @@ Customer Acquisition Cost (CPA) trends.
 
 Volume vs. Value: Comparing high-volume Organic traffic against high-value Paid traffic.
 
-[Dashboard]('marketing_attribution_dashboard.png')
+![Dashboard](marketing_attribtuion_dashboard.png)
 
 🚀 How to Run
 
